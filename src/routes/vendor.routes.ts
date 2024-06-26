@@ -9,6 +9,7 @@ router.use(checkToken);
 router.use(checkIfVendor);
 
 router.post("/", vendorController.createMenuItem);
+router.get("/", vendorController.getAllMenuItems);
 router.patch(
   "/:id",
   [validate.UUID, validate.UpdateMenuItem],

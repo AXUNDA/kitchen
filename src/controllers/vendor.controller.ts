@@ -36,6 +36,15 @@ const vendorController = {
       next(error);
     }
   },
+  async getAllMenuItems(req: Request, res: Response, next: NextFunction) {
+    try {
+      const userId = res.locals.user.id;
+      const data = await vendorService.getAllMenuItems(userId);
+      return res.status(200).json({ data });
+    } catch (error) {
+      next(error);
+    }
+  },
 };
 
 export { vendorController };

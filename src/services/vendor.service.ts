@@ -30,6 +30,7 @@ const vendorService = {
   },
   async getAllMenuItems(userId: string) {
     try {
+      return await itemRepository.getAllMenuItems(userId);
     } catch (error) {
       throw error;
     }

@@ -37,7 +37,7 @@ const itemRepository = {
   async getAllMenuItems(userId: string) {
     const items = await VendorItem.findAll({
       where: {
-        userId,
+        UserId: userId,
       },
     });
     return items;
