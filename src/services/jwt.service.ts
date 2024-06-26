@@ -9,7 +9,6 @@ const jwtService = {
         expiresIn: "3d",
       });
     } catch (error: any) {
-      console.log(error);
       throw new CustomError(error.message, 409);
     }
   },

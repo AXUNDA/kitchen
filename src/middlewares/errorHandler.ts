@@ -14,7 +14,7 @@ export async function errorHandler(
     });
   } else {
     return res.status(500).json({
-      msg: err.message,
+      msg: "A server side error occurred,please try again later",
       success: false,
     });
   }

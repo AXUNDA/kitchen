@@ -6,7 +6,7 @@ const userService = {
     try {
       return await userRepository.getVendors();
     } catch (error) {
-      throw new CustomError("something went wrong", 500);
+      throw error;
     }
   },
 
@@ -14,7 +14,7 @@ const userService = {
     try {
       return await userRepository.getVendor(id);
     } catch (error) {
-      throw new CustomError("something went wrong", 500);
+      throw error;
     }
   },
 
@@ -22,7 +22,7 @@ const userService = {
     try {
       return await itemRepository.getMenuItem(id);
     } catch (error) {
-      throw new CustomError("something went wrong", 500);
+      throw error;
     }
   },
 };

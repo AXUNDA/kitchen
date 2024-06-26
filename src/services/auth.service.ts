@@ -18,7 +18,7 @@ const authService = {
           409,
         );
       } else {
-        throw new CustomError("something went wrong", 500);
+        throw error;
       }
     }
   },
@@ -33,7 +33,7 @@ const authService = {
       });
       return { access_token: token };
     } catch (error) {
-      throw new CustomError("something went wrong", 500);
+      throw error;
     }
   },
 };
