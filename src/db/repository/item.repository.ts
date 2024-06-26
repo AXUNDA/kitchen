@@ -1,4 +1,5 @@
 import { item } from "../../dto";
+import CustomError from "../../utils/customError";
 import { VendorItem } from "../models";
 
 const itemRepository = {
@@ -13,22 +14,26 @@ const itemRepository = {
     return item;
   },
   async updateMenuItem(itemId: string, dto: item, userId: string) {
-    return await VendorItem.update(dto, {
+    const data = await VendorItem.update(dto, {
       where: {
         id: itemId,
         userId,
       },
     });
-    return { item: dto };
+
+    if (data[0] == 0) throw new CustomError("menu item does not exist", 500);
+    return data;
   },
   async deleteMenuItem(itemId: string, userId: string) {
-    await VendorItem.destroy({
+    const data = await VendorItem.destroy({
       where: {
         id: itemId,
         UserId: userId,
       },
     });
-    return;
+    if (data == 0) throw new CustomError("menu item does not exist", 500);
+
+    return data;
   },
   async getMenuItem(itemId: string) {
     const item = await VendorItem.findByPk(itemId);
