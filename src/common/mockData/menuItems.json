@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Rice & Stew",
+    "description": "A classic dish featuring steamed rice served with a savory, slow-cooked beef stew.",
+    "price": "₦12,000.00"
+  },
+  {
+    "name": "Egusi Soup",
+    "description": "A traditional Nigerian soup made with ground melon seeds, enriched with assorted meats and spices.",
+    "price": "₦7,000.00"
+  },
+  {
+    "name": "Okro Soup",
+    "description": "A hearty soup made with fresh okra and tender chicken wings, seasoned to perfection.",
+    "price": "₦5,000.00"
+  },
+  {
+    "name": "Porridge Beans",
+    "description": "A comforting dish of slow-cooked beans, enhanced with the rich flavor of black tiger shrimp.",
+    "price": "₦2,700.00"
+  },
+  {
+    "name": "Spaghetti with Sauce",
+    "description": "A delicious serving of spaghetti topped with a hearty tomato-based sauce, perfect for a satisfying meal.",
+    "price": "₦2,500.00"
+  },
+  {
+    "name": "Jollof Rice",
+    "description": "A West African favorite, this dish features rice cooked in a rich blend of tomatoes, peppers, and spices.",
+    "price": "₦2,000.00"
+  },
+  {
+    "name": "Chicken & Chips",
+    "description": "Crispy fried chicken served with golden, crunchy fries, a perfect combination for a quick meal.",
+    "price": "₦2,000.00"
+  },
+  {
+    "name": "Burgers",
+    "description": "Juicy beef patties layered with fresh toppings and a special sauce, all nestled in a soft bun.",
+    "price": "₦5,300.00"
+  },
+  {
+    "name": "Salad",
+    "description": "A refreshing mix of fresh greens, vegetables, and a light dressing for a healthy meal option.",
+    "price": "₦1,560.00"
+  },
+  {
+    "name": "Meat Pie",
+    "description": "A flaky pastry filled with seasoned minced meat and vegetables, baked to golden perfection.",
+    "price": "₦2,960.00"
+  }
+]
