@@ -8,7 +8,7 @@ import checkIfVendor from "../middlewares/checkIfVendor";
 router.use(checkToken);
 router.use(checkIfVendor);
 
-router.post("/", vendorController.createMenuItem);
+router.post("/", validate.CreateMenuItem, vendorController.createMenuItem);
 router.get("/", vendorController.getAllMenuItems);
 router.patch(
   "/:id",
