@@ -1,6 +1,6 @@
 # Kitchen
 
-This is a simple Node.js and Express.js demo application that allows users get vendors and also see their menu items's,it also allows vedors perform CRUD operation on their items
+This is a simple Node.js and Express.js demo application that allows users get vendors and also see their menu items's,it also allows vendors perform CRUD operations on their items
 
 [Live url](https://kitchen-izc9.onrender.com/ "live url")
 
